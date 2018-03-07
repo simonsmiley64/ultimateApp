@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090D86C4204E6A13007D68D9 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090D86C1204E6A13007D68D9 /* CoreDataManager.swift */; };
+		090D86C5204E6A13007D68D9 /* UltimateTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 090D86C2204E6A13007D68D9 /* UltimateTest.xcdatamodeld */; };
 		09586A06204E397800477686 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09586A05204E397800477686 /* AppDelegate.swift */; };
 		09586A0B204E397800477686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09586A09204E397800477686 /* Main.storyboard */; };
-		09586A0E204E397800477686 /* UltimateTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09586A0C204E397800477686 /* UltimateTest.xcdatamodeld */; };
 		09586A10204E397800477686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09586A0F204E397800477686 /* Assets.xcassets */; };
 		09586A13204E397800477686 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09586A11204E397800477686 /* LaunchScreen.storyboard */; };
 		09586A1E204E397800477686 /* UltimateTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09586A1D204E397800477686 /* UltimateTestTests.swift */; };
@@ -39,10 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090D86C1204E6A13007D68D9 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		090D86C3204E6A13007D68D9 /* UltimateTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UltimateTest.xcdatamodel; sourceTree = "<group>"; };
 		09586A02204E397800477686 /* UltimateTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimateTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09586A05204E397800477686 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09586A0A204E397800477686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		09586A0D204E397800477686 /* UltimateTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UltimateTest.xcdatamodel; sourceTree = "<group>"; };
 		09586A0F204E397800477686 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09586A12204E397800477686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09586A14204E397800477686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090D86C0204E6A13007D68D9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				090D86C1204E6A13007D68D9 /* CoreDataManager.swift */,
+				090D86C2204E6A13007D68D9 /* UltimateTest.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		095869F9204E397800477686 = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +136,7 @@
 				09586A0F204E397800477686 /* Assets.xcassets */,
 				09586A11204E397800477686 /* LaunchScreen.storyboard */,
 				09586A14204E397800477686 /* Info.plist */,
-				09586A0C204E397800477686 /* UltimateTest.xcdatamodeld */,
+				090D86C0204E6A13007D68D9 /* CoreData */,
 			);
 			path = UltimateTest;
 			sourceTree = "<group>";
@@ -461,9 +472,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090D86C5204E6A13007D68D9 /* UltimateTest.xcdatamodeld in Sources */,
 				09586A37204E39EE00477686 /* MainMenuViewController.swift in Sources */,
 				09586A39204E3B7D00477686 /* MainMenuModel.swift in Sources */,
-				09586A0E204E397800477686 /* UltimateTest.xcdatamodeld in Sources */,
+				090D86C4204E6A13007D68D9 /* CoreDataManager.swift in Sources */,
 				09586A06204E397800477686 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -764,12 +776,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		09586A0C204E397800477686 /* UltimateTest.xcdatamodeld */ = {
+		090D86C2204E6A13007D68D9 /* UltimateTest.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				09586A0D204E397800477686 /* UltimateTest.xcdatamodel */,
+				090D86C3204E6A13007D68D9 /* UltimateTest.xcdatamodel */,
 			);
-			currentVersion = 09586A0D204E397800477686 /* UltimateTest.xcdatamodel */;
+			currentVersion = 090D86C3204E6A13007D68D9 /* UltimateTest.xcdatamodel */;
 			path = UltimateTest.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

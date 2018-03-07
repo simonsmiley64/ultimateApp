@@ -20,6 +20,10 @@ class MainMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let player = CoreDataManager.sharedInstance.createEntity(entityName: "CDPlayer") as! CDPlayer
+        player.name = "Simon"
+        CoreDataManager.sharedInstance.save()
     }
 }
 
@@ -34,5 +38,17 @@ extension MainMenuViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         cell?.textLabel?.text = model.getTitle(for: indexPath)
         return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //let userFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
+        
+        let test = CoreDataManager.sharedInstance.fetchEntities(with: "CDPlayer")
+        
+        let player = test.first as! CDPlayer
+        
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
